@@ -6,7 +6,6 @@ module Luban
           define_executable 'node'
 
           def package_dist; task.opts.dist; end
-          def package_full_name; "node#{package_version}.#{package_dist}"; end
           def package_full_name; "node-v#{package_version}-#{package_dist}"; end
 
           def source_repo
